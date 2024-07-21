@@ -4,3 +4,4 @@
 
 def index_range(page, page_size):
     """returns a tuple of size two"""
+    return (page, page_size)
