@@ -7,8 +7,8 @@ class BasicCache(BaseCaching):
     """a class for a basic caching system"""
     def put(self, key, item):
         """assignment method"""
-        if key or item is None:
-            pass
+        if key is None or item is None:
+            return
         self.cache_data[key] = item
 
     def get(self, key):
